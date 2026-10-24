@@ -32,7 +32,7 @@ The name lives in one place, [js/title.js](js/title.js).
 - **Mushrooms** take 4 squirts; they shrink with each one. Squirts can't get through a mushroom, so it shields the caterpillar behind it.
 - **The squirter is never boxed in:** he steps over mushrooms, so nothing in the strip can trap him.
 - **The grasshopper** hops in zig-zags across the strip and nibbles mushrooms it lands on. **The ladybug** flies straight down a column when the strip has few mushrooms, dropping new ones. **The snail** crawls across the patch and makes the mushrooms it passes sticky (shiny purple, dripping): a head that bumps a sticky mushroom slides straight down to the bottom row.
-- **Each wave** has its own colours: green, orange, pink, blue caterpillars, with matching mushroom caps. Foxy and Froggy cheer from the hedge when a wave clears.
+- **Each wave** has its own colours: a green, then orange, pink and blue caterpillar, and the mushroom caps change colour too (red, orange, purple, blue). Foxy and Froggy cheer from the hedge when a wave clears.
 
 ### Levels
 

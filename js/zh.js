@@ -42,7 +42,7 @@
   L.rule(/^BEST (\d+)$/, '最高分 $1');
   L.rule(/^HI-SCORE$/, '最高分');
   L.rule(/^HI-SCORE (\d+) · (.+)$/, '最高分 $1 · $2');
-  L.rule(/^ · (FOXY 🦊|FROGGY 🐸|TEDDY|TOMMY|TEDDY & TOMMY)$/, ' · $1');
+  L.rule(/^\s*·\s*(FOXY 🦊|FROGGY 🐸|TEDDY|TOMMY|TEDDY & TOMMY)$/, ' · $1');
   L.rule(/^🦋 WAVE CLEAR! \+(\d+)$/, '🦋 这一波清光啦！+$1');
   L.rule(/^🐛 WAVE (\d+)!$/, '🐛 第 $1 波！');
   L.rule(/^😆 (?:(\S+): )?TICKLED!$/, (m, who) => `😆 ${who ? who + ' ' : ''}被挠痒痒啦！`);

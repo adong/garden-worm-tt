@@ -1,0 +1,6 @@
+[
+ { "label": "prefs", "js": "localStorage.setItem('claudeGames.muted', '1'); localStorage.removeItem('claudeGames.lang'); localStorage.removeItem('gardenWormTT.v1'); location.reload(); 'reload'", "wait": 4500 },
+ { "label": "title", "js": "game.step(4); innerWidth + 'x' + innerHeight", "wait": 600, "shot": "layout-title" },
+ { "label": "play", "js": "game.start({ who: 'teddy', level: 'easy', seed: 5 }); game.autopilot(true); game.step(8); game.call(); game.step(1.2); JSON.stringify(game.info().players[0].screen)", "wait": 600, "shot": "layout-play" },
+ { "label": "results", "js": "for (let i = 0; i < 300 && game.info().mode === 'play'; i++) game.step(1, false); game.step(7); game.info().mode", "wait": 600, "shot": "layout-results" }
+]

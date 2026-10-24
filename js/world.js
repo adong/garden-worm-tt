@@ -972,7 +972,8 @@
   const BOX = [];
   function box() {
     if (BOX.length) return BOX;
-    const l = X(-0.5) - EDGE - 0.5, r = X(W - 0.5) + EDGE + 0.5, top = Z(-1.9), bot = Z(H - 1) + 1.0;
+    // (the fences may be cut a little on the narrowest screens: the lawn matters more)
+    const l = X(-0.5) - EDGE - 0.15, r = X(W - 0.5) + EDGE + 0.15, top = Z(-1.9), bot = Z(H - 1) + 1.0;
     for (const [x, z, y] of [[l, top, 0], [r, top, 0], [l, top, 1.2], [r, top, 1.2], [l, bot, 0], [r, bot, 0], [l, bot - 0.5, 1.6], [r, bot - 0.5, 1.6]]) BOX.push(new T.Vector3(x, y, z));
     return BOX;
   }
@@ -1015,6 +1016,9 @@
     const ox = (b.x0 + b.x1) / 2 - (safe.left + aw / 2), oy = (b.y0 + b.y1) / 2 - (safe.top + ah / 2);
     camera.setViewOffset(w, h, ox, oy, w, h);
     camera.updateProjectionMatrix();
+    // the haze starts beyond the garden however far back the camera has to stand (tall phones: far)
+    scene.fog.near = hi + 14;
+    scene.fog.far = hi + 75;
     toCam.copy(dir);
     // the shadows follow the garden
     sun.target.position.copy(target);

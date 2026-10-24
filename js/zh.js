@@ -24,7 +24,7 @@
     'TEDDY: WASD + SPACE · TOMMY: ARROWS + ENTER': 'TEDDY：WASD + 空格键 · TOMMY：方向键 + 回车键',
     'SLIDE TO RUN · HOLD TO SQUIRT!': '滑动跑 · 按住喷水！',
     '✋ HIGH FIVE!': '✋ 击掌！', '❤️ +1': '❤️ +1', '🐌 STICKY SNAIL!': '🐌 黏黏的蜗牛来啦！', '🐛 A BABY CATERPILLAR!': '🐛 一只小毛毛虫！',
-    '🐛 LAST WAVE!': '🐛 最后一波！', '😆 TICKLED OUT!': '😆 被挠痒痒挠光啦！',
+    '🐛 LAST WAVE!': '🐛 最后一波！', '✂️ SPLIT! A NEW HEAD!': '✂️ 断成两条！又多了一个头！', '😆 TICKLED OUT!': '😆 被挠痒痒挠光啦！',
     '💦 GRASSHOPPER SOAKED!': '💦 蚱蜢被淋湿啦！', '💦 LADYBUG SOAKED!': '💦 瓢虫被淋湿啦！', '💦 SNAIL SOAKED!': '💦 蜗牛被淋湿啦！',
     // pause, results
     'PAUSED': '暂停中', 'P · Esc · Space': 'P · Esc · 空格键', '▶ KEEP PLAYING': '▶ 继续玩', '🏠 HOME': '🏠 主页', '↻ PLAY AGAIN': '↻ 再玩一次',
@@ -32,8 +32,8 @@
     // the ? panel (js/keys.js)
     'run': '跑', 'call your brother · high five': '叫兄弟 · 击掌', 'who plays': '谁来玩', 'level 🐣 / 🔥': '难度 🐣 / 🔥', 'play! · again': '开始！· 再来',
     'sound on / off': '声音 开 / 关',
-    'Squirt the caterpillar: every segment you squirt turns into a butterfly, leaves a mushroom and splits the caterpillar in two. Mushrooms take 4 squirts. In 1 player both sets of keys work, and T calls your brother: he brings a treat and a sprinkler storm that turns 5 segments into butterflies. With 2 players, T is a high five.':
-      '用水枪喷毛毛虫：喷到的每一节都会变成蝴蝶，留下一个蘑菇，毛毛虫也会从那里断成两条。蘑菇要喷 4 下才会冲掉。一个人玩时两套按键都能用，T 叫兄弟来：他会带来好吃的，还有一场洒水风暴，把 5 节毛毛虫变成蝴蝶。两个人玩时，T 是击掌。',
+    'Squirt the caterpillar: every segment you squirt turns into a butterfly, leaves a mushroom and splits the caterpillar in two, each part with its own head. A head is worth 100, a body segment 10. Mushrooms take 4 squirts. In 1 player both sets of keys work, and T calls your brother: he brings a treat and a sprinkler storm that turns 5 segments into butterflies. With 2 players, T is a high five.':
+      '用水枪喷毛毛虫：喷到的每一节都会变成蝴蝶，留下一个蘑菇，毛毛虫也会从那里断成两条，每条都有自己的头。打中头得 100 分，身体一节得 10 分。蘑菇要喷 4 下才会冲掉。一个人玩时两套按键都能用，T 叫兄弟来：他会带来好吃的，还有一场洒水风暴，把 5 节毛毛虫变成蝴蝶。两个人玩时，T 是击掌。',
     "Put a finger down and slide it to run; the squirter squirts while your finger is down (with 2 players, Teddy uses the left half and Tommy the right). Tap your brother's face to call him.":
       '手指按住屏幕滑动就能跑，手指按着水枪就会一直喷水（两个人玩时，Teddy 用左半边，Tommy 用右半边）。点兄弟的头像叫他来。',
   });

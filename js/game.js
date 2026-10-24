@@ -65,7 +65,7 @@
   let paused = false, demo = true, auto = false;
   let g = null, people = [], humans = [];
   let countT = 0, countShown = 0, endT = 0, rainT = 0;
-  let buddy = null, hfT = 0, hfSprite = null, treatSprite = null, results = null, calls = 0;
+  let buddy = null, hfT = 0, hfSprite = null, treatSprite = null, results = null, calls = 0, splitShown = false;
   const held = new Set();
   const touches = new Map(); // pointerId -> { i, lx, ly, to }
   const bugs = { mirror: false, stuck: false }; // for the keys check's fail run (game.sabotage)
@@ -109,6 +109,7 @@
     held.clear();
     hfT = 0;
     rainT = 0;
+    splitShown = false;
     if (hfSprite) hfSprite.visible = false;
     refreshHud();
   }
@@ -496,6 +497,11 @@
           break;
         case 'mushroom':
           if (ev.by === 'lady' && !quiet) SFX.splat();
+          break;
+        case 'newHead':
+          // the first split of a game says so (then it's just the giggle)
+          if (!splitShown) toast('✂️ SPLIT! A NEW HEAD!', 'pink');
+          splitShown = true;
           break;
         case 'baby':
           toast('🐛 A BABY CATERPILLAR!', 'pink');

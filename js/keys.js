@@ -13,7 +13,7 @@ Kit.help.setup({
     ['pause', 'P or Esc', 'P or Esc'],
     ['sound on / off', 'M', 'M'],
   ],
-  note: 'Squirt the caterpillar: every segment you squirt turns into a butterfly, leaves a mushroom and splits the caterpillar in two. Mushrooms take 4 squirts. In 1 player both sets of keys work, and T calls your brother: he brings a treat and a sprinkler storm that turns 5 segments into butterflies. With 2 players, T is a high five.',
+  note: 'Squirt the caterpillar: every segment you squirt turns into a butterfly, leaves a mushroom and splits the caterpillar in two, each part with its own head. A head is worth 100, a body segment 10. Mushrooms take 4 squirts. In 1 player both sets of keys work, and T calls your brother: he brings a treat and a sprinkler storm that turns 5 segments into butterflies. With 2 players, T is a high five.',
   touch: 'Put a finger down and slide it to run; the squirter squirts while your finger is down (with 2 players, Teddy uses the left half and Tommy the right). Tap your brother\'s face to call him.',
   button: { top: 'calc(env(safe-area-inset-top, 0px) + 10px)', left: 'max(10px, env(safe-area-inset-left, 0px))' },
 });

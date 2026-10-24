@@ -1,0 +1,10 @@
+[
+ { "label": "prefs", "js": "localStorage.setItem('claudeGames.muted', '1'); localStorage.removeItem('claudeGames.lang'); localStorage.removeItem('gardenWormTT.v1'); location.reload(); 'reload'", "wait": 4500 },
+ { "label": "title", "js": "game.step(6); 'demo score ' + game.info().score", "wait": 700, "shot": "tour-1-title" },
+ { "label": "play", "js": "game.start({ who: 'teddy', level: 'easy', seed: 5 }); game.autopilot(true); game.step(9); JSON.stringify(game.info()).slice(0, 300)", "wait": 700, "shot": "tour-2-play" },
+ { "label": "buddy", "js": "game.call(); game.step(2.6); game.info().buddy", "wait": 600, "shot": "tour-3-buddy" },
+ { "label": "storm", "js": "game.step(1.0); game.info().buddy + ' segs ' + game.info().segs", "wait": 600, "shot": "tour-4-storm" },
+ { "label": "two", "js": "game.autopilot(false); game.start({ who: 'both', level: 'normal', seed: 9 }); game.step(3); game.autopilot(true); game.step(6); game.autopilot(false); game.highFive(); game.step(0.4); JSON.stringify(game.info().players)", "wait": 600, "shot": "tour-5-two" },
+ { "label": "won", "js": "game.autopilot(true); for (let i = 0; i < 400 && game.info().mode === 'play'; i++) game.step(1, false); game.step(2.5); game.info().mode + ' ' + game.info().score", "wait": 600, "shot": "tour-6-won" },
+ { "label": "results", "js": "game.step(4); JSON.stringify(game.info().results)", "wait": 600, "shot": "tour-7-results" }
+]
